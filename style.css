@@ -1,126 +1,269 @@
-#title{
-    background-color: black;
-  }
-  .container{
-    background-color: black;
-    text-align: center;
-    padding-top: 3%;
-    padding-bottom: 5%;
-    padding-left: 100px;
-      padding-right: 100px;
-  }
-  .heading{
-    padding-top: 100px;
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Title Section */
+#title {
+  background-color: black;
+  padding: 20px 0;
+}
+
+.container {
+  background-color: black;
+  padding: 3% 5%;
+}
+
+.heading {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.brand {
+  color: #fff;
+  font-family: 'Caveat Brush', sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.intro {
+  color: #fff;
+  font-family: 'Dongle', sans-serif;
+  font-size: 4rem;
+  padding-top: 15px;
+}
+
+.intro2 {
+  color: #fff;
+  font-family: 'Lilita One', sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+/* Skills Section */
+#skills {
+  padding: 50px 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-1 {
+  padding: 50px 20px;
+  text-align: center;
+  order: 1;
+}
+
+.weblottie {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-intro {
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.skill-des {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+/* Projects Section */
+#projects {
+  background-color: black;
+  padding: 50px 0;
+}
+
+.pro-heading {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.cardparent {
+  padding: 15px;
+}
+
+.card {
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title, .card-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Blog Section */
+#blog {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.bloglottie, .contactlottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.blog-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blog-para {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.bottombut, .bottombut2 {
+  margin: 10px auto;
+  display: block;
+  width: fit-content;
+}
+
+/* Contact Section */
+#contact {
+  background-color: black;
+  padding: 50px 0;
+}
+
+.contact-item {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contacttitle {
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.contactpara {
+  font-size: 1rem;
+  color: gray;
+  letter-spacing: 1px;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.contacti {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 200;
+  padding: 0 10px;
+  margin: 0 5px;
+  font-size: 1.5rem;
+}
+
+/* Lottie Animations */
+lottie-player {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 3% 5%;
   }
   
-  .brand{
-    color: #fff;
-    font-family: Caveat Brush, sans-serif;
-    font-weight: bold;
-  }
-  .intro{
-    color: #fff;
-    font-family: Lilita One,sans-serif;
-    font-family: Dongle,sans-serif;
-    font-size: 6rem;
-    padding-top: 15px;
-  }
-  .intro2{
-      color: #fff;
-      font-family: Lilita One,sans-serif;
-  }
-  .nav-item{
-    padding: 0 18px;
-  }
-  .row{
-    padding-left: 13%;
-    padding-right: 13%;
-  }
-  .skill-1{
-    padding-top: 150px;
-    text-align: center;
-  }
-  .skill-intro{
-    padding-bottom: 15px;
-    text-align: left;
-    font-family: Montserrat,sans-serif;
+  .intro {
     font-size: 3rem;
-    font-weight: bold;
   }
-  .skill-des{
-    text-align: left;
-      font-family: Montserrat,sans-serif;
-  }
-  #projects{
-    background-color: black;
-    padding-bottom: 25px;
-  }
-  .pro-heading{
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    font-family: Montserrat,sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  .card-title, card-text{
-    font-family: Montserrat,sans-serif;
-  }
-  #blog{
-    background-color: #fff;
-    padding-top: 150px;
-    padding-bottom: 50px;
-  }
-  .blog-heading{
-    font-family: Montserrat,sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  .blog-para{
-      text-align: center;
-      font-family: Montserrat,sans-serif;
-      padding-top: 10px;
-      margin-right: 40px;
-      font-size: 1.2rem;
-  }
-  .bottombut2{
-    margin-left: 195px;
-  }
-  #contact{
-    background-color: black;
-  }
-  .contact-item{
-    color: #fff;
-    text-align: center;
-    padding-top: 180px;
-    font-weight: bold;
-    padding: 7% 15%;
-    font-family: 'Montserrat', sans-serif;
+  
+  .intro2 {
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
   }
-  .contacttitle{
-    font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      font-size: 3.0rem;
-      text-align: center;
-      color: white;
+  
+  .brand {
+    font-size: 1.5rem;
   }
-  .contactpara{
-    font-family: 'Montserrat', sans-serif;
-      font-size: 1.2rem;
-      color: gray;
-      letter-spacing: 1px;
-      padding: 3% 3%;
-      text-align: center;
+  
+  .navbar-nav {
+    text-align: center;
   }
+  
+  .skill-intro, .pro-heading, .blog-heading, .contacttitle {
+    font-size: 2rem;
+  }
+  
+  .skill-des, .blog-para, .contactpara {
+    font-size: 0.9rem;
+  }
+  
+  .skill-1 {
+    padding: 30px 10px;
+    order: 2;
+  }
+  
+  .weblottie {
+    order: 1;
+    padding: 20px 0;
+  }
+  
+  .cardparent {
+    padding: 10px;
+  }
+  
   .contacti {
-    color: #007bff;
-      text-decoration: none;
-      background-color: transparent;
-      font-weight: 200;
-      padding-left: 10px;
-      padding-right: 10px;
+    font-size: 1.2rem;
+    padding: 0 5px;
   }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    font-size: 2.5rem;
+  }
+  
+  .skill-intro, .pro-heading, .blog-heading, .contacttitle {
+    font-size: 1.8rem;
+  }
+  
+  .bottombut, .bottombut2 {
+    font-size: 0.9rem;
+  }
+  
+  .contacti {
+    font-size: 1rem;
+  }
+}
